@@ -228,7 +228,6 @@ label {
 body {
   margin-left: 1.375em;
   margin right: 1.375em;
-  padding: 1.375em;
   font-family: 'Kavivanar', monospace;
   background-color: #006400;
 }
@@ -236,18 +235,20 @@ body {
 input[type="text"], input[type="email"], input[type="submit"] {
   border: none;
   font-family: 'Ubuntu', monospace;
-  background-color: 818180;
+  background-color: #818180;
   padding: 0.25em;
 }
 
 @@media screen and (max-width: 480px) {
   body {
-    font-size: 1.25em;
+    padding: 0.70em;
+    width: auto;
+  }
+  h1 {
+    font-size: 0.75em;
   }
 
   p {
     width: auto;
   }
-}
-}
 }
