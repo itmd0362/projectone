@@ -230,7 +230,7 @@ body {
   margin right: 1.375em;
   padding: 1.375em;
   font-family: 'Kavivanar', monospace;
-  background-color: grey;
+  background-color: #006400;
 }
 
 input[type="text"], input[type="email"], input[type="submit"] {
@@ -240,5 +240,14 @@ input[type="text"], input[type="email"], input[type="submit"] {
   padding: 0.25em;
 }
 
+@@media screen and (max-width: 480px) {
+  body {
+    font-size: 1.25em;
+  }
+
+  p {
+    width: auto;
+  }
+}
 }
 }
