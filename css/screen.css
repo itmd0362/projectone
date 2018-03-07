@@ -205,9 +205,12 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-label {
-  display: block;
+img {
+  min-height: 100%;
+  overflow: hidden;
 }
+
+
 
 /* ===== LAYOUT STYLES ====== */
 
