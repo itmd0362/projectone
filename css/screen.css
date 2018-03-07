@@ -192,6 +192,13 @@ img, audio, video {
 */
 
 html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  min-height: 100%;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  background-color: #90BCA2;
   font-size: 1.375em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
@@ -210,9 +217,8 @@ label {
 
 
 h1 {
-  padding-top: 1.2 em;
+  padding-top: 1.2em;
   padding-bottom: 1.2em;
-  font-family: 'Impact', sans-serif;
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -221,9 +227,6 @@ li {
   padding: 1.125em;
 }
 
-label {
-  font-family: 'Kavivanar', sans-serif;
-}
 
 body {
   margin-left: 1.375em;
