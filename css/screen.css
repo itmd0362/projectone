@@ -200,13 +200,18 @@ html {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   background-color: #90BCA2;
   font-size: 1.375em; /* 22px */
-  line-height: 1.182em; /* 26px / ~ 120% */
-  padding: 1.182em; /* 26px / ~ 120% */
-  text-rendering: optimizeLegibility;
+  line-height: 1.5em;
+}
+
+h1 {
+  padding-bottom: 0.5em;
+  font-weight: bold;
+  font-size: 2.5em;
 }
 
 img {
   min-height: 100%;
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -214,40 +219,56 @@ label {
   display: block;
 }
 
-/* ===== LAYOUT STYLES ====== */
-
-/* ===== MODULAR STYLES ===== */
-
-/* ===== STATE STYLES ======= */
-
-
-h1 {
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
 li {
-  padding: 1.125em;
+  padding: 0.75em;
 }
 
 
 body {
   margin-left: 1.375em;
-  margin right: 1.375em;
-  font-family: 'Kavivanar', monospace;
-  background-color: #006400;
+  background-color: #90BCA2;
 }
 
-input[type="text"], input[type="email"], input[type="submit"] {
+#main-content {
+  margin: 0 0 1em;
+  border-radius: 0.75em;
+  background-color: #90BCA2;
+
+}
+
+#main-image {
+  max-width: 100%;
+  height: auto;
+
+}
+
+input[type="text"], input[type="email"], input[type="button"] {
   border: none;
-  font-family: 'Ubuntu', monospace;
-  background-color: #818180;
-  padding: 0.25em;
+  color: white;
+  height: 1.5em;
+  width: inherit;
+  line-height: 1.5em;
+  border-radius: 1.0em;
 }
 
-@@media screen and (max-width: 480px) {
+@media screen and (max-width:960px) {
+
+  img {
+    object-fit: fill;
+  }
+
+  #main-content {
+    display: flex;
+    flex-direction: row;
+}
+
+  #main-image {
+    max-width: 50%;
+    min-width: 50%;
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+@media screen and (max-width: 480px) {
   body {
     padding: 0.70em;
     width: auto;
@@ -259,4 +280,5 @@ input[type="text"], input[type="email"], input[type="submit"] {
   p {
     width: auto;
   }
+}
 }
